@@ -17,17 +17,17 @@ var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    slidePerView: "auto",
+    slidesPerView: "auto",
     coverFlowEffect: {
-        rotate: 0,
+        rotate: 1,
         stretch: 0,
         depth: 300,
         modifier: 1,
-        slideShadows: false,
+        slideShadows: true,
     },
     pagination: {
         el: ".swiper-pagination",
-        // clickable: true,
+        clickable: true,
     },
 });
 

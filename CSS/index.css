@@ -236,7 +236,7 @@ main{
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    padding-top: -10rem;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -246,7 +246,10 @@ main{
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     justify-content: center;
-    width: 80%
+    width: 90%;
+    /* align-items: center;
+    margin-right: 5rem;
+    bottom: 5rem;  */
 }
 
 .connect_content h1{
@@ -255,6 +258,16 @@ main{
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 3rem;
+}
+
+.connect_content h3 {
+    color: gainsboro;
+    text-transform: capitalize;
+    justify-content: center;
+    margin-right: 5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 .connect_content a{
@@ -521,6 +534,7 @@ main{
 
 .contact_me_container .contact_me_wrapper .contact_me_content{
     flex: 1 1 40rem;
+    padding-top: 2rem;
 }
 
 .contact_me_content .mail h3,
@@ -538,7 +552,7 @@ main{
 .contact_me_content .instagram a{
     font-size: 1.5rem;
     color: blue;
-    margin: 1rem 0;
+    word-break: break-all;
 }
 
 .contact_me_content .mail a:hover,
@@ -575,9 +589,15 @@ main{
     color: #fff;
 }
 
-/* .form input::placeholder{
+.form input::placeholder{
     color: #fff;
-} */
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
 
 .form textarea{
     width: 100%;
